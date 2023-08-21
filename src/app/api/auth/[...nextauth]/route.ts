@@ -1,7 +1,11 @@
+import prisma from "@/lib/prisma";
+import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 const handler = NextAuth({
+  // adapter: PrismaAdapter(prisma),
+
   providers: [
     CredentialsProvider({
       // The name to display on the sign in form (e.g. "Sign in with...")
@@ -41,16 +45,30 @@ const handler = NextAuth({
       },
     }),
   ],
-  // callbacks: {
-  //   async jwt({ token, user }) {
-  //     return { ...token, ...user };
-  //   },
+  session: {
+    strategy: "jwt",
+  },
+  secret: process.env.NEXTAUTH_SECRET, //TODO: Doi thanh NEXTAUTH_SECRET
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) token.role = user.role;
+      return token;
+    },
 
-  //   async session({ session, token }) {
-  //     session.user = token as any;
-  //     return session;
-  //   },
-  // },
+    async session({ session, token }: { session: any; token: any }) {
+      session.user.role = token.role;
+      return session;
+    },
+    async redirect({ url, baseUrl }) {
+      // Redirect /admin to /
+      if (url.startsWith("/admin")) return `${baseUrl}`
+      // Allows relative callback URLs
+      if (url.startsWith("/")) return `${baseUrl}${url}`
+      // Allows callback URLs on the same origin
+      else if (new URL(url).origin === baseUrl) return url
+      return baseUrl
+    },
+  },
 });
 
 export { handler as GET, handler as POST };

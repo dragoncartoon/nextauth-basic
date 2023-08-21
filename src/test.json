@@ -1,0 +1,402 @@
+data:  {
+  browsers: {
+    ie: {
+      usage_global: [Object],
+      prefix: 'ms',
+      versions: [Array],
+      browser: 'IE',
+      release_date: [Object]
+    },
+    edge: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Edge',
+      release_date: [Object],
+      prefix_exceptions: [Object]
+    },
+    firefox: {
+      usage_global: [Object],
+      prefix: 'moz',
+      versions: [Array],
+      browser: 'Firefox',
+      release_date: [Object]
+    },
+    chrome: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Chrome',
+      release_date: [Object]
+    },
+    safari: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Safari',
+      release_date: [Object]
+    },
+    opera: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Opera',
+      release_date: [Object],
+      prefix_exceptions: [Object]
+    },
+    ios_saf: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Safari on iOS',
+      release_date: [Object]
+    },
+    op_mini: {
+      usage_global: [Object],
+      prefix: 'o',
+      versions: [Array],
+      browser: 'Opera Mini',
+      release_date: [Object]
+    },
+    android: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Android Browser',
+      release_date: [Object]
+    },
+    bb: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Blackberry Browser',
+      release_date: [Object]
+    },
+    op_mob: {
+      usage_global: [Object],
+      prefix: 'o',
+      versions: [Array],
+      browser: 'Opera Mobile',
+      release_date: [Object],
+      prefix_exceptions: [Object]
+    },
+    and_chr: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Chrome for Android',
+      release_date: [Object]
+    },
+    and_ff: {
+      usage_global: [Object],
+      prefix: 'moz',
+      versions: [Array],
+      browser: 'Firefox for Android',
+      release_date: [Object]
+    },
+    ie_mob: {
+      usage_global: [Object],
+      prefix: 'ms',
+      versions: [Array],
+      browser: 'IE Mobile',
+      release_date: [Object]
+    },
+    and_uc: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'UC Browser for Android',
+      release_date: [Object],
+      prefix_exceptions: [Object]
+    },
+    samsung: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Samsung Internet',
+      release_date: [Object]
+    },
+    and_qq: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'QQ Browser',
+      release_date: [Object]
+    },
+    baidu: {
+      usage_global: [Object],
+      prefix: 'webkit',
+      versions: [Array],
+      browser: 'Baidu Browser',
+      release_date: [Object]
+    },
+    kaios: {
+      usage_global: [Object],
+      prefix: 'moz',
+      versions: [Array],
+      browser: 'KaiOS Browser',
+      release_date: [Object]
+    }
+  },
+  prefixes: {
+    'border-radius': { browsers: [Array], feature: 'border-radius', mistakes: [Array] },
+    'border-top-left-radius': { browsers: [Array], feature: 'border-radius', mistakes: [Array] },
+    'border-top-right-radius': { browsers: [Array], feature: 'border-radius', mistakes: [Array] },
+    'border-bottom-right-radius': { browsers: [Array], feature: 'border-radius', mistakes: [Array] },
+    'border-bottom-left-radius': { browsers: [Array], feature: 'border-radius', mistakes: [Array] },
+    'box-shadow': { browsers: [Array], feature: 'css-boxshadow', mistakes: [Array] },
+    animation: { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-name': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-duration': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-delay': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-direction': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-fill-mode': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-iteration-count': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-play-state': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    'animation-timing-function': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    '@keyframes': { browsers: [Array], feature: 'css-animation', mistakes: [Array] },
+    transition: {
+      browsers: [Array],
+      feature: 'css-transitions',
+      mistakes: [Array]
+    },
+    'transition-property': {
+      browsers: [Array],
+      feature: 'css-transitions',
+      mistakes: [Array]
+    },
+    'transition-duration': {
+      browsers: [Array],
+      feature: 'css-transitions',
+      mistakes: [Array]
+    },
+    'transition-delay': {
+      browsers: [Array],
+      feature: 'css-transitions',
+      mistakes: [Array]
+    },
+    'transition-timing-function': {
+      browsers: [Array],
+      feature: 'css-transitions',
+      mistakes: [Array]
+    },
+    transform: { browsers: [Array], feature: 'transforms2d' },
+    'transform-origin': { browsers: [Array], feature: 'transforms2d' },
+    perspective: { browsers: [Array], feature: 'transforms3d' },
+    'perspective-origin': { browsers: [Array], feature: 'transforms3d' },
+    'transform-style': { browsers: [Array], feature: 'transforms3d', mistakes: [Array] },
+    'backface-visibility': { browsers: [Array], feature: 'transforms3d', mistakes: [Array] },
+    'linear-gradient': {
+      browsers: [Array],
+      feature: 'css-gradients',
+      mistakes: [Array],
+      props: [Array]
+    },
+    'repeating-linear-gradient': {
+      browsers: [Array],
+      feature: 'css-gradients',
+      mistakes: [Array],
+      props: [Array]
+    },
+    'radial-gradient': {
+      browsers: [Array],
+      feature: 'css-gradients',
+      mistakes: [Array],
+      props: [Array]
+    },
+    'repeating-radial-gradient': {
+      browsers: [Array],
+      feature: 'css-gradients',
+      mistakes: [Array],
+      props: [Array]
+    },
+    'box-sizing': { browsers: [Array], feature: 'css3-boxsizing' },
+    filter: { browsers: [Array], feature: 'css-filters' },
+    'filter-function': {
+      browsers: [Array],
+      feature: 'css-filter-function',
+      props: [Array]
+    },
+    'backdrop-filter': { browsers: [Array], feature: 'css-backdrop-filter' },
+    element: {
+      browsers: [Array],
+      feature: 'css-element-function',
+      props: [Array]
+    },
+    columns: { browsers: [Array], feature: 'multicolumn' },
+    'column-width': { browsers: [Array], feature: 'multicolumn' },
+    'column-gap': { browsers: [Array], feature: 'multicolumn' },
+    'column-rule': { browsers: [Array], feature: 'multicolumn' },
+    'column-rule-color': { browsers: [Array], feature: 'multicolumn' },
+    'column-rule-width': { browsers: [Array], feature: 'multicolumn' },
+    'column-count': { browsers: [Array], feature: 'multicolumn' },
+    'column-rule-style': { browsers: [Array], feature: 'multicolumn' },
+    'column-span': { browsers: [Array], feature: 'multicolumn' },
+    'column-fill': { browsers: [Array], feature: 'multicolumn' },
+    'break-before': { browsers: [Array], feature: 'multicolumn' },
+    'break-after': { browsers: [Array], feature: 'multicolumn' },
+    'break-inside': { browsers: [Array], feature: 'multicolumn' },
+    'user-select': {
+      browsers: [Array],
+      feature: 'user-select-none',
+      mistakes: [Array]
+    },
+    'display-flex': { browsers: [Array], feature: 'flexbox', props: [Array] },
+    'inline-flex': { browsers: [Array], feature: 'flexbox', props: [Array] },
+    flex: { browsers: [Array], feature: 'flexbox' },
+    'flex-grow': { browsers: [Array], feature: 'flexbox' },
+    'flex-shrink': { browsers: [Array], feature: 'flexbox' },
+    'flex-basis': { browsers: [Array], feature: 'flexbox' },
+    'flex-direction': { browsers: [Array], feature: 'flexbox' },
+    'flex-wrap': { browsers: [Array], feature: 'flexbox' },
+    'flex-flow': { browsers: [Array], feature: 'flexbox' },
+    'justify-content': { browsers: [Array], feature: 'flexbox' },
+    order: { browsers: [Array], feature: 'flexbox' },
+    'align-items': { browsers: [Array], feature: 'flexbox' },
+    'align-self': { browsers: [Array], feature: 'flexbox' },
+    'align-content': { browsers: [Array], feature: 'flexbox' },
+    calc: { browsers: [Array], feature: 'calc', props: [Array] },
+    'background-origin': { browsers: [Array], feature: 'background-img-opts' },
+    'background-size': { browsers: [Array], feature: 'background-img-opts' },
+    'background-clip': { browsers: [Array], feature: 'background-clip-text' },
+    'font-feature-settings': { browsers: [Array], feature: 'font-feature' },
+    'font-variant-ligatures': { browsers: [Array], feature: 'font-feature' },
+    'font-language-override': { browsers: [Array], feature: 'font-feature' },
+    'font-kerning': { browsers: [Array], feature: 'font-kerning' },
+    'border-image': { browsers: [Array], feature: 'border-image' },
+    '::selection': { browsers: [Array], feature: 'css-selection', selector: true },
+    '::placeholder': { browsers: [Array], feature: 'css-placeholder', selector: true },
+    ':placeholder-shown': {
+      browsers: [Array],
+      feature: 'css-placeholder-shown',
+      selector: true
+    },
+    hyphens: { browsers: [Array], feature: 'css-hyphens' },
+    ':fullscreen': { browsers: [Array], feature: 'fullscreen', selector: true },
+    '::backdrop': { browsers: [Array], feature: 'backdrop', selector: true },
+    '::file-selector-button': {
+      browsers: [Array],
+      feature: 'file-selector-button',
+      selector: true
+    },
+    ':autofill': { browsers: [Array], feature: 'css-autofill', selector: true },
+    'tab-size': { browsers: [Array], feature: 'css3-tabsize' },
+    'max-content': { browsers: [Array], feature: 'intrinsic-width', props: [Array] },
+    'min-content': { browsers: [Array], feature: 'intrinsic-width', props: [Array] },
+    fill: { browsers: [Array], feature: 'intrinsic-width', props: [Array] },
+    'fill-available': { browsers: [Array], feature: 'intrinsic-width', props: [Array] },
+    'fit-content': { browsers: [Array], feature: 'intrinsic-width', props: [Array] },
+    stretch: { browsers: [Array], feature: 'css-width-stretch', props: [Array] },
+    'zoom-in': {
+      browsers: [Array],
+      feature: 'css3-cursors-newer',
+      props: [Array]
+    },
+    'zoom-out': {
+      browsers: [Array],
+      feature: 'css3-cursors-newer',
+      props: [Array]
+    },
+    grab: { browsers: [Array], feature: 'css3-cursors-grab', props: [Array] },
+    grabbing: { browsers: [Array], feature: 'css3-cursors-grab', props: [Array] },
+    sticky: { browsers: [Array], feature: 'css-sticky', props: [Array] },
+    'touch-action': { browsers: [Array], feature: 'pointer' },
+    'text-decoration-skip': { browsers: [Array], feature: 'text-decoration' },
+    'text-decoration-skip-ink': { browsers: [Array], feature: 'text-decoration' },
+    'text-decoration': { browsers: [Array], feature: 'text-decoration' },
+    'text-decoration-color': { browsers: [Array], feature: 'text-decoration' },
+    'text-decoration-line': { browsers: [Array], feature: 'text-decoration' },
+    'text-decoration-style': { browsers: [Array], feature: 'text-decoration' },
+    'text-size-adjust': { browsers: [Array], feature: 'text-size-adjust' },
+    'mask-clip': { browsers: [Array], feature: 'css-masks' },
+    'mask-composite': { browsers: [Array], feature: 'css-masks' },
+    'mask-image': { browsers: [Array], feature: 'css-masks' },
+    'mask-origin': { browsers: [Array], feature: 'css-masks' },
+    'mask-repeat': { browsers: [Array], feature: 'css-masks' },
+    'mask-border-repeat': { browsers: [Array], feature: 'css-masks' },
+    'mask-border-source': { browsers: [Array], feature: 'css-masks' },
+    mask: { browsers: [Array], feature: 'css-masks' },
+    'mask-position': { browsers: [Array], feature: 'css-masks' },
+    'mask-size': { browsers: [Array], feature: 'css-masks' },
+    'mask-border': { browsers: [Array], feature: 'css-masks' },
+    'mask-border-outset': { browsers: [Array], feature: 'css-masks' },
+    'mask-border-width': { browsers: [Array], feature: 'css-masks' },
+    'mask-border-slice': { browsers: [Array], feature: 'css-masks' },
+    'clip-path': { browsers: [Array], feature: 'css-clip-path' },
+    'box-decoration-break': { browsers: [Array], feature: 'css-boxdecorationbreak' },
+    'object-fit': { browsers: [Array], feature: 'object-fit' },
+    'object-position': { browsers: [Array], feature: 'object-fit' },
+    'shape-margin': { browsers: [Array], feature: 'css-shapes' },
+    'shape-outside': { browsers: [Array], feature: 'css-shapes' },
+    'shape-image-threshold': { browsers: [Array], feature: 'css-shapes' },
+    'text-overflow': { browsers: [Array], feature: 'text-overflow' },
+    '@viewport': { browsers: [Array], feature: 'css-deviceadaptation' },
+    '@resolution': { browsers: [Array], feature: 'css-media-resolution' },
+    'text-align-last': { browsers: [Array], feature: 'css-text-align-last' },
+    pixelated: { browsers: [Array], feature: 'css-crisp-edges', props: [Array] },
+    'image-rendering': { browsers: [Array], feature: 'css-crisp-edges' },
+    'border-inline-start': { browsers: [Array], feature: 'css-logical-props' },
+    'border-inline-end': { browsers: [Array], feature: 'css-logical-props' },
+    'margin-inline-start': { browsers: [Array], feature: 'css-logical-props' },
+    'margin-inline-end': { browsers: [Array], feature: 'css-logical-props' },
+    'padding-inline-start': { browsers: [Array], feature: 'css-logical-props' },
+    'padding-inline-end': { browsers: [Array], feature: 'css-logical-props' },
+    'border-block-start': { browsers: [Array], feature: 'css-logical-props' },
+    'border-block-end': { browsers: [Array], feature: 'css-logical-props' },
+    'margin-block-start': { browsers: [Array], feature: 'css-logical-props' },
+    'margin-block-end': { browsers: [Array], feature: 'css-logical-props' },
+    'padding-block-start': { browsers: [Array], feature: 'css-logical-props' },
+    'padding-block-end': { browsers: [Array], feature: 'css-logical-props' },
+    appearance: { browsers: [Array], feature: 'css-appearance' },
+    'scroll-snap-type': { browsers: [Array], feature: 'css-snappoints' },
+    'scroll-snap-coordinate': { browsers: [Array], feature: 'css-snappoints' },
+    'scroll-snap-destination': { browsers: [Array], feature: 'css-snappoints' },
+    'scroll-snap-points-x': { browsers: [Array], feature: 'css-snappoints' },
+    'scroll-snap-points-y': { browsers: [Array], feature: 'css-snappoints' },
+    'flow-into': { browsers: [Array], feature: 'css-regions' },
+    'flow-from': { browsers: [Array], feature: 'css-regions' },
+    'region-fragment': { browsers: [Array], feature: 'css-regions' },
+    'image-set': { browsers: [Array], feature: 'css-image-set', props: [Array] },
+    'writing-mode': { browsers: [Array], feature: 'css-writing-mode' },
+    'cross-fade': { browsers: [Array], feature: 'css-cross-fade', props: [Array] },
+    ':read-only': {
+      browsers: [Array],
+      feature: 'css-read-only-write',
+      selector: true
+    },
+    ':read-write': {
+      browsers: [Array],
+      feature: 'css-read-only-write',
+      selector: true
+    },
+    'text-emphasis': { browsers: [Array], feature: 'text-emphasis' },
+    'text-emphasis-position': { browsers: [Array], feature: 'text-emphasis' },
+    'text-emphasis-style': { browsers: [Array], feature: 'text-emphasis' },
+    'text-emphasis-color': { browsers: [Array], feature: 'text-emphasis' },
+    'display-grid': { browsers: [Array], feature: 'css-grid', props: [Array] },
+    'inline-grid': { browsers: [Array], feature: 'css-grid', props: [Array] },
+    'grid-template-columns': { browsers: [Array], feature: 'css-grid' },
+    'grid-template-rows': { browsers: [Array], feature: 'css-grid' },
+    'grid-row-start': { browsers: [Array], feature: 'css-grid' },
+    'grid-column-start': { browsers: [Array], feature: 'css-grid' },
+    'grid-row-end': { browsers: [Array], feature: 'css-grid' },
+    'grid-column-end': { browsers: [Array], feature: 'css-grid' },
+    'grid-row': { browsers: [Array], feature: 'css-grid' },
+    'grid-column': { browsers: [Array], feature: 'css-grid' },
+    'grid-area': { browsers: [Array], feature: 'css-grid' },
+    'grid-template': { browsers: [Array], feature: 'css-grid' },
+    'grid-template-areas': { browsers: [Array], feature: 'css-grid' },
+    'place-self': { browsers: [Array], feature: 'css-grid' },
+    'grid-column-align': { browsers: [Array], feature: 'css-grid' },
+    'grid-row-align': { browsers: [Array], feature: 'css-grid' },
+    'text-spacing': { browsers: [Array], feature: 'css-text-spacing' },
+    ':any-link': { browsers: [Array], feature: 'css-any-link', selector: true },
+    isolate: { browsers: [Array], feature: 'css-unicode-bidi', props: [Array] },
+    plaintext: { browsers: [Array], feature: 'css-unicode-bidi', props: [Array] },
+    'isolate-override': { browsers: [Array], feature: 'css-unicode-bidi', props: [Array] },
+    'overscroll-behavior': { browsers: [Array], feature: 'css-overscroll-behavior' },
+    'text-orientation': { browsers: [Array], feature: 'css-text-orientation' },
+    'print-color-adjust': { browsers: [Array], feature: 'css-print-color-adjust' },
+    'color-adjust': { browsers: [Array], feature: 'css-print-color-adjust' }
+  }
+}
